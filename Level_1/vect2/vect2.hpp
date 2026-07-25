@@ -13,11 +13,8 @@ class vect2
         vect2(const int num1,const int num2): x(num1), y(num2) {}
         vect2& operator=(const vect2& other)
         {
-            if (this != &other)
-            {
-                this->x = other.x;
-                this->y = other.y;
-            }
+            this->x = other.x;
+            this->y = other.y;
             return *this;
         }
         ~vect2() {}
